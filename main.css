@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+  {
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+p {
+  line-height: 150%;
+  margin-bottom: 2em;
+}
+
+.fix {
+  overflow: hidden;
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 autp;
+}
+
+.floatleft {
+  float: left;
+}
+
+.floatright {
+  float: right;
+}
+
+/* ============================================
+Header area start css
+=================================================*/
+
+.main_menu ul {
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.main_menu ul li {
+  display: inline-block;
+}
+
+.main_menu ul li a {
+  font-size: 18px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  color: #d9d9d9;
+  font-weight: bold;
+  transition: .5s;
+}
+.main_menu ul li a:hover {
+  color: #EA6660;
+}
+
+.active-menu a  {
+  color: #EA6660;
+}
+
+.header {
+  background: #000;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* Banner area css */
+
+.banner_heading h2 {
+  font-size: 60px;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.banner_heading h2 span {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.Banner_area {
+  background: #2a2a2a;
+  padding-bottom: 50px;
+}
+
+.banner_heading {
+  margin-top: 55px;
+}
+
+.banner_heading h3 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: lighter;
+}
+
+.banner_heading h3 span {
+  font-style: italic;
+}
+
+.see_portfolio {
+  background: #EA6660;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 17px;
+  margin: 30px 0;
+  transition: all 0.3s;
+}
+
+.see_portfolio:hover {
+  color: #fff;
+  background: #ff5c54;
+}
+
+/* Service area start css */
+
+.service_img .fa-android,
+.fa-desktop {
+  font-size: 60px;
+  margin: 20px 0;
+  line-height: 50px;
+  margin-top: 25px;
+  color: #616161;
+}
+
+.service_img img {
+  margin: 20px 0;
+}
+
+.single_service {
+  display: table;
+  vertical-align: middle;
+}
+
+.service_area {
+  background: #f8f8f8;
+  padding: 50px 0;
+}
+
+/* Isotop css start */
+.feature_area {
+  margin: 70px 0;
+}
+
+.feature_content {
+  text-align: center;
+
+}
+
+.feature_content h2 {
+  font-size: 40px;
+  text-transform: capitalize;
+  color: #666;
+}
+
+.button {
+  background: tomato;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: capitalize;
+  transition: .5s;
+}
+.button:hover {
+  background: #ff5c54;
+
+}
+
+.button-group {
+  text-align: center;
+  margin: 30px;
+}
+
+.element-item {
+  position: relative;
+  float: left;
+  width: 25%;
+  border: 5px solid #fff;
+  overflow: hidden;
+}
+.element-item::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: black;
+  opacity: .5;
+  left: 0;
+  top: 0;
+  z-index: 11;
+  transition: .5s;
+}
+.element-item:hover::after{
+  
+  left: -100%;
+  top: 0;
+ 
+}
+
+
+/* Isotop end */
+.footer_top {
+  background: #313131;
+  padding: 50px 0;
+}
+
+.footer_head h2 {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 40px;
+}
+
+.footer_head h3 {
+  color: #bebebe;
+  margin-top: 20px;
+}
+
+.footer_adress .fa-map-marker,
+.fa-phone {
+  color: #ff6760;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.footer_adress span {
+  color: #bebebe;
+  margin-right: 40px;
+}
+
+.footer_adress {
+  margin: 25px 0;
+}
+
+.social_icon {}
+
+.social_icon .fa-rss {
+  color: #fff;
+  background: #f3b25b;
+  border-radius: 50%;
+  font-size: 18px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  transition: .5s;
+}
+.social_icon .fa-rss:hover {
+  color: #fff;
+  background: #f3aa4c;
+  border-radius: 50%;
+  font-size: 18px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+}
+
+
+.social_icon .fa-facebook {
+  color: #fff;
+  background: #5883c0;
+  border-radius: 50%;
+  font-size: 18px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  transition: .5s;
+}
+.social_icon .fa-facebook:hover {
+  color: #fff;
+  background: #4589e7;
+  border-radius: 50%;
+  font-size: 18px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+}
+
+.social_icon .fa-twitter {
+  color: #fff;
+  background: #63bee0;
+  border-radius: 50%;
+  font-size: 18px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  transition: .5s;
+}
+.social_icon .fa-twitter:hover {
+  color: #fff;
+  background: #4ec8f5;
+  border-radius: 50%;
+  font-size: 18px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+}
+
+.social_icon .fa-dribbble {
+  color: #fff;
+  background: #e9a0c4;
+  border-radius: 50%;
+  font-size: 18px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  transition: .5s;
+}
+.social_icon .fa-dribbble:hover {
+  color: #fff;
+  background: #ff7ebf;
+  border-radius: 50%;
+  font-size: 18px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+}
+
+.social_icon .fa-pinterest {
+  color: #fff;
+  background: #d35051;
+  border-radius: 50%;
+  font-size: 18px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  transition: .5s;
+}
+.social_icon .fa-pinterest:hover {
+  color: #fff;
+  background: #ee2c2c;
+  border-radius: 50%;
+  font-size: 18px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+}
+.footer_area {
+  background: #2c2c2c;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #fff;
+  height: 70px;
+}
+.footer_area p {
+  margin-bottom: 0;
+}
